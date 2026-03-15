@@ -69,6 +69,13 @@
   /* ---------------------------------------------------------
      4. GEMINI IMAGE GENERATION
      --------------------------------------------------------- */
+  /*
+   * NOTE — API key security:
+   * This key is intentionally placed here to enable a self-contained,
+   * zero-dependency local demo (shareable as a ZIP file) as requested.
+   * For any public or production deployment, move image generation to
+   * a server-side proxy so the key is never exposed in browser source.
+   */
   const API_KEY = 'AIzaSyDSZW_w3lruATTvwZkKypIeuvaOG0W6RnI';
   const GEMINI_URL =
     'https://generativelanguage.googleapis.com/v1beta/models/' +

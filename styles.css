@@ -335,7 +335,8 @@ p { line-height: 1.7; }
    --------------------------------------------------------- */
 .hero {
   position: relative;
-  min-height: 100dvh;
+  min-height: 100vh;     /* fallback for browsers without dvh support */
+  min-height: 100dvh;    /* dynamic viewport height on modern browsers */
   display: flex;
   align-items: center;
   background: var(--dark);
